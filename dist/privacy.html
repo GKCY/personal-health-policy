@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How GKCY's Personal Health Tracker handles personal records, local storage, and optional AI analysis.">
+  <title>Privacy Policy — Personal Health Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><div class="wrap"><a class="brand" href="./">Personal Health Tracker</a><nav aria-label="Main navigation"><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav></div></header>
+  <main class="wrap">
+    <p class="eyebrow">Project policies</p><h1>Privacy Policy</h1>
+    <p class="meta">Last updated: October 11, 2026 · Maintainer: GKCY</p>
+    <p>Personal Health Tracker is a personal project under development for GKCY's own health records. This policy describes its intended workflow. It is not a service for collecting other people's health information.</p>
+    <h2>Data and purpose</h2>
+    <p>The workflow uses records the owner imports or explicitly authorizes a provider to supply. These may include sleep, activity, readiness, heart rate, and related measurements, depending on the chosen file or permissions. The purpose is personal record keeping and trend analysis.</p>
+    <p>If an OAuth integration is enabled, sign-in takes place with the provider. The tool uses access and refresh tokens rather than asking for an Oura password. Requested permissions must be limited to the data needed for the chosen function.</p>
+    <h2>Local storage and retention</h2>
+    <p>The intended primary storage is the owner's device. Local working records, exports, analysis results, and any authorization tokens remain under the owner's control. Device backup or synchronization settings may create additional copies. Health data and credentials must not be committed to this public repository or documentation site.</p>
+    <p>Records are kept only while needed for the chosen personal use and only for periods allowed by the source provider. API and MCP records are subject to the provider's additional storage restrictions; this policy does not promise indefinite retention or grant permission to retain restricted data.</p>
+    <h2>Optional AI-assisted analysis</h2>
+    <p>The owner intends to choose some records or summaries for analysis by ChatGPT or another explicitly selected AI service, only where the data source permits that use. Such a choice sends the selected information outside the device. The recipient's own terms, privacy policy, retention, and account settings then apply. Local deletion does not delete copies held by that recipient.</p>
+    <div class="note"><p><strong>Oura integration limits:</strong> Oura's current API agreement restricts providing API-sourced data to AI systems and specifies its MCP route for permitted LLM use. An API-to-AI transfer is not enabled or authorized by this policy. Any integration must follow the <a href="https://cloud.ouraring.com/legal/api-agreement">applicable Oura agreement</a>.</p></div>
+    <p>The project does not sell records or use them for advertising. This documentation site has no health-data upload form, analytics script, or AI connection.</p>
+    <h2>Control and deletion</h2>
+    <p>The owner can stop the workflow, revoke provider authorization, and delete local records, tokens, results, and backups. Revoking access stops future retrieval and, where the provider requires it, further processing. Revocation does not itself erase existing copies. To remove information previously sent to an external service, use that service's deletion controls. Deletion and consent withdrawal must also meet any applicable provider deadlines.</p>
+    <h2>This public website</h2>
+    <p>This static site is hosted on GitHub Pages. GitHub may process technical request information, such as IP addresses, under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>. The site itself does not request health records or authorization tokens.</p>
+    <h2>Maintainer and updates</h2>
+    <p>Maintainer: <a href="https://github.com/GKCY">GKCY</a>. Non-sensitive questions about this policy can be raised in the <a href="https://github.com/GKCY/personal-health-policy/issues">project repository</a>. Public issues are not a private channel for health records, tokens, or passwords. This policy must be updated before the workflow's data handling changes.</p>
+  </main>
+  <footer><div class="wrap"><a href="./">Project home</a><a href="terms.html">Terms of Service</a></div></footer>
+</body>
+</html>
